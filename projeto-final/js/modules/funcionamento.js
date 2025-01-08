@@ -1,11 +1,14 @@
 export default class Funcionamento {
   constructor(funcionamento, activeClass) {
     this.funcionamento = document.querySelector(funcionamento);
+    this.activeClass = activeClass;
   }
 
   dadosFuncionamento() {
-    this.diaSemana = funcionamento.dataset.semana.split(",").map(Number);
-    this.horarioSemana = funcionamento.dataset.horario.split(",").map(Number);
+    this.diaSemana = this.funcionamento.dataset.semana.split(",").map(Number);
+    this.horarioSemana = this.funcionamento.dataset.horario
+      .split(",")
+      .map(Number);
   }
 
   dadosAgora() {
