@@ -17,7 +17,8 @@
 
 .modal {
   background-color: #fff;
-  min-width: 300px;
+  width: 80vw;
+  max-width: 600px;
   padding: 40px;
   border: 10px solid #fb5;
   box-shadow: 0 0 0 10px #fff;
@@ -37,8 +38,8 @@
   }
 }
 
-.ativo .modal{
-    animation: modal .3s forwards;
+.ativo .modal {
+  animation: modal 0.3s forwards;
 }
 
 .fechar {
@@ -49,7 +50,7 @@
   position: absolute;
   top: -30px;
   right: -30px;
-  background: #e54;
+  background: #e54 url("../img/fechar.svg") no-repeat center center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
   font-size: 1.2rem;
   color: #fff;

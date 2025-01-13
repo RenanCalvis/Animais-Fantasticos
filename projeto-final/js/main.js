@@ -39,7 +39,9 @@ scrollAnima.init();
 const dropdownMenus = new DropdownMenu("[data-dropdown]");
 dropdownMenus.init();
 
-const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+const menuMobile = new MenuMobile(
+  '[data-menu="button"]','[data-menu="list"]'
+);
 menuMobile.init();
 
 const funcionamento = new Funcionamento("[data-semana]", "aberto");
