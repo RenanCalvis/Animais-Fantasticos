@@ -9,6 +9,7 @@ import ScrollSuave from "./modules/scroll-suave.js";
 import Accordion from "./modules/accordion.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
+import { SlideNav } from "./modules/slide.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -46,3 +47,7 @@ funcionamento.init();
 
 fetchAnimais("animaisApi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl(".custom-controls");
